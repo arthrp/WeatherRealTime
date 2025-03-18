@@ -1,0 +1,16 @@
+@model WeatherRealTime.Models.UserInfoModel
+
+<h2>User claims</h2>
+
+<ul class="list-group mb-5">
+    @foreach (var claim in Model.Claims)
+    {
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">@claim.Type</div>
+            @claim.Value
+        </div>
+    </li>
+    }
+</ul>
+

@@ -1,0 +1,21 @@
+@model WeatherRealTime.Models.LoginViewModel
+
+<div>
+    <h1>Login</h1>
+</div>
+
+<div class="row">
+    <form asp-action="Login" method="post">
+        <input type="hidden" name="ReturnUrl" id="ReturnUrl" value="@Model.ReturnUrl" />
+        
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input class="form-control" id="username" name="username" placeholder="Username" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+    </form>
+</div>

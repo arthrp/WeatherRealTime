@@ -1,0 +1,9 @@
+@model WeatherRealTime.Models.WeatherModel
+
+<h1>Weather in @User.Claims.First(x => x.Type == "location").Value</h1>
+
+<script src="~/js/weather.js" asp-append-version="true"></script>
+
+<div id="weather-result">
+    
+</div>
